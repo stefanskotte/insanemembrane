@@ -57,9 +57,14 @@ geo[int(TAB_Y[0] * PX):int(TAB_Y[1] * PX), int(CUT_X * PX):] = 0
 for p_ in pads:
     r_ = 2.7 if p_["area"] > 12 else 2.15       # LED pads are bigger
     cv2.circle(geo, (int(p_["x"] * PX), int(p_["y"] * PX)), int(r_ * PX), 0, -1)
+_L = np.load(f"{D}/lands.npy")     # x, y, measured diameter
 for j_ in jumps:
     for t_ in j_["taps"]:
-        cv2.circle(geo, (int(t_[0] * PX), int(t_[1] * PX)), int(1.15 * PX), 0, -1)
+        # A600 spots are ~2.25 mm and some are teardrop-shaped: clear the whole rim, sized from the spot itself
+        k_ = int(np.argmin(np.hypot(_L[:, 0] - t_[0], _L[:, 1] - t_[1])))
+        d_ = _L[k_, 2] if np.hypot(_L[k_, 0] - t_[0], _L[k_, 1] - t_[1]) < 1.0 else 2.25
+        r_ = min(2.0, max(1.5, d_ / 2 + 0.6))
+        cv2.circle(geo, (int(t_[0] * PX), int(t_[1] * PX)), int(r_ * PX), 0, -1)
 sk = (cv2.ximgproc.thinning(geo * 255, thinningType=cv2.ximgproc.THINNING_GUOHALL) > 0).astype(np.uint8)
 cnt = ndimage.convolve(sk, np.ones((3, 3), np.uint8), mode="constant") - 1
 cnt[sk == 0] = 0
@@ -118,7 +123,7 @@ for j in jumps:
     j["net"] = nets.pop() if len(nets) == 1 else None
     for t in j["taps"]:
         taps.append((np.array(t), j["net"]))
-        term.append((np.array(t), j["net"], 1.9))
+        term.append((np.array(t), j["net"], 2.6))
 
 tracks, free_ends = [], []
 for s in segs:

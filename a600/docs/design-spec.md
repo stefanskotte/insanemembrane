@@ -95,3 +95,7 @@ Rebuild: `tools/a600/make.sh`.
   - the half-round edge notches and the notched corner shapes,
   - the straight edges and the tail root.
   A ≤ 0.3 mm sliver of printed line beside some top holes is most likely the camera angle.
+- **Squares around vias removed (2026-11-23, spotted by the user at pin 21):** the A600's landing spots are about 2.25 mm, some of them teardrop-shaped. Their silver rims were being traced as tiny rings of track, which the 45° step turned into ~1 mm squares around 76 vias.
+  - The replica step now clears each spot's whole rim, sized from the spot's measured diameter.
+  - A new cleanup stage, `tools/build/drop_loops.py`, removes any remaining small loop at a via, but only if every net stays connected exactly as before.
+  - Result: 0 squares left at vias. DRC is clean and all copper is still 0/45/90°.

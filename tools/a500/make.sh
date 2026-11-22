@@ -19,6 +19,7 @@ $PYV tools/build/pads.py $D
 $PYV tools/build/heal.py $D
 $PYV tools/build/octi.py $D
 $PYV tools/build/tidy.py $D
+$PYV tools/build/drop_loops.py $D
 $PYV tools/build/pads.py $D
 $KPY tools/build/build_board.py $D/board_geom.json $PCB $D/routing.json 2>&1 | grep -v wxApp
 $CLI pcb drc --format json -o $W/drc.json $PCB >/dev/null 2>&1 || true

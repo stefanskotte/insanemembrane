@@ -115,3 +115,4 @@ Changes from the draft, all following decisions already agreed or measured:
 - **Fit check passed (2026-11-22):** the user printed the 1:1 PDF and laid the original on top. The holes, slots, pads, finger tab and straight edges line up. A 0.5 mm offset in one photo turned out to be the camera angle when the same corner was shot from straight above.
 - **Outer corners rounded R 1.2 mm (2026-11-22, user)**, to match the original's rounded corners seen in the fit check.
   The two corners at the tab tip stay square, because fingers 1 and 31 sit about 0.6 mm from the tab edge. DRC is still clean and all copper still 0/45/90°.
+- **Squares around vias removed (2026-11-23):** two small rim loops at vias, the same artefact as on the A600, were removed by `tools/build/drop_loops.py`. DRC is clean and all copper is still 0/45/90°.
