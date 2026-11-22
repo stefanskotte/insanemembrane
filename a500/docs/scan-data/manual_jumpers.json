@@ -1,0 +1,6 @@
+{"jumpers": [
+ {"path": [[113.3, 309.8], [113.6, 316.0], [117.6, 322.0], [118.0, 333.7]], "note": "S-bridge, read from the back-side insulating strip"},
+ {"path": [[116.7, 309.8], [120.7, 317.5], [121.4, 331.2]], "note": "S-bridge, read from the back-side insulating strip"},
+ {"path": [[47.4, 376.5], [48.6, 378.9], [63.5, 378.9]], "note": "upper of three horizontal bars"},
+ {"path": [[63.4, 386.3], [47.6, 386.3], [45.6, 388.3]], "note": "lower of three horizontal bars"}
+]}

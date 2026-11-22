@@ -1,0 +1,4 @@
+{"traces": [
+  {"path": [[101.4, 45.3], [105.9, 45.3]], "note": "net 15: silver tarnished brown on the original (back scan), clearly continuous on the front scan"},
+  {"path": [[101.4, 45.3], [101.4, 39.9], [100.3, 38.9]], "note": "net 15: TAB pad 2 to the T-junction, also tarnished; read from 1 mm-gridded front crop"}
+]}

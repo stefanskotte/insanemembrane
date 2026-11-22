@@ -1,0 +1,21 @@
+# raw scans (too big for GitHub; kept locally)
+*.tiff
+*.tif
+# private watermark keys - never publish
+docs/watermark/
+a500/docs/watermark/
+**/watermark/
+# environments, build scratch, caches
+.venv/
+build/
+a500/build/
+__pycache__/
+*.pyc
+.DS_Store
+.playwright-mcp/
+# KiCad local files
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.lck
+.history/
