@@ -109,7 +109,7 @@ a1200/  a500/  a600/        one folder per membrane
 tools/a1200|a500|a600/      per-model steps (make.sh, scan registration, geometry, replica routing)
 tools/build/                shared stages: pads, heal, octi (0/45/90), tidy, build_board, check_print
 tools/scan/                 generic scan helpers (holes, features, pad shape)
-docs/                       project-wide: scan ruler, backlog, README images
+docs/                       project-wide: backlog, README images
 ```
 
 The raw TIFF scans (≈100 MB each) are not in the repository.

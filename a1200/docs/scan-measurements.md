@@ -2,7 +2,7 @@
 
 Source scans (project root): `top-left/right.tiff` (carbon-pad side), `back-left/right.tiff`
 (silver side), `back-tail.tiff` (carbon side, despite the name), `top-tail.tiff` (silver side).
-All 600 dpi, Canon i-SENSYS MF744Cdw, printed rulers from `docs/scan-ruler.pdf` in every scan.
+All 600 dpi, Canon i-SENSYS MF744Cdw, printed rulers (made with `tools/make_scan_ruler.py`) in every scan.
 Scripts: `tools/scan/*.py`. Extracted data: `a1200/docs/scan-data/`.
 
 ## Accuracy
