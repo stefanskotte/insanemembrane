@@ -1,0 +1,107 @@
+{
+ "jumpers": [
+  {
+   "path": [
+    [
+     135.6,
+     147.0
+    ],
+    [
+     136.3,
+     167.0
+    ]
+   ],
+   "note": "vertical bar; top spot has a trace joined to it (not round in the mask)"
+  },
+  {
+   "path": [
+    [
+     120.6,
+     183.2
+    ],
+    [
+     115.3,
+     188.5
+    ],
+    [
+     106.3,
+     188.6
+    ]
+   ],
+   "note": "45-degree then horizontal bar"
+  },
+  {
+   "path": [
+    [
+     77.8,
+     298.1
+    ],
+    [
+     77.8,
+     307.3
+    ]
+   ],
+   "note": "left of the two vertical bars; top spot has a trace joined"
+  },
+  {
+   "path": [
+    [
+     102.0,
+     304.5
+    ],
+    [
+     102.2,
+     322.4
+    ]
+   ],
+   "note": "vertical bar; top spot has a trace joined"
+  },
+  {
+   "path": [
+    [
+     151.9,
+     146.8
+    ],
+    [
+     152.4,
+     162.3
+    ]
+   ],
+   "note": "vertical bar; top spot has a trace joined"
+  },
+  {
+   "path": [
+    [
+     156.9,
+     140.8
+    ],
+    [
+     160.4,
+     144.3
+    ],
+    [
+     160.5,
+     156.5
+    ]
+   ],
+   "note": "45-degree then vertical bar (read from the back-side strip)"
+  },
+  {
+   "path": [
+    [
+     162.8,
+     145.3
+    ],
+    [
+     162.7,
+     163.6
+    ],
+    [
+     161.8,
+     165.5
+    ]
+   ],
+   "note": "vertical bar then short diagonal; top spot has a trace joined"
+  }
+ ]
+}

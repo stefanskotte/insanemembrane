@@ -121,6 +121,12 @@ print(f"tab: root x {root_x:.2f}, tip x {end_x:.2f} (sticks out {end_x - root_x:
       f"centre y {tab_cy:.2f}; finger centre y {fing_cy:.2f} (offset {fing_cy - tab_cy:+.2f})")
 tab = box(root_x - 2.0, tab_cy - tab_w / 2, end_x, tab_cy + tab_w / 2)
 board = unary_union([body, tab]).buffer(1.0, join_style=1).buffer(-1.0, join_style=1)   # 1 mm inner fillets
+# outer corners rounded R 1.2 like the original (user, 2026-11-22, from the fit-check print); the tab tip
+# corners stay square because fingers 1 / 31 sit ~0.6 mm from the tab edge
+OUTER_R = 1.2
+_tipzone = box(end_x - 3.0, tab_cy - tab_w / 2 - 3.0, end_x + 1.0, tab_cy + tab_w / 2 + 3.0)
+_rounded = board.buffer(-OUTER_R, join_style=1).buffer(OUTER_R, join_style=1)
+board = unary_union([_rounded, board.intersection(_tipzone)]).buffer(0)
 board = board.simplify(0.02)
 pins = [dict(pin=k + 1, x_end=end_x, y=fing_cy + (k - (N_PINS - 1) / 2) * PITCH) for k in range(N_PINS)]
 

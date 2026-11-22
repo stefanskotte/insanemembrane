@@ -112,3 +112,6 @@ Changes from the draft, all following decisions already agreed or measured:
 - **Silkscreen:** the label and the CC BY-NC-SA 4.0 licence line, running vertically where the original has its MITSUMI logo.
 - **Watermark:** decoy vias and microtext with their own code. The key is private, in `a500/docs/watermark/README-PRIVATE.md`.
 - **1:1 fit-check PDF:** `a500/fab/insanemembrane-a500-1to1-fit-check.pdf` (2 A4 pages).
+- **Fit check passed (2026-11-22):** the user printed the 1:1 PDF and laid the original on top. The holes, slots, pads, finger tab and straight edges line up. A 0.5 mm offset in one photo turned out to be the camera angle when the same corner was shot from straight above.
+- **Outer corners rounded R 1.2 mm (2026-11-22, user)**, to match the original's rounded corners seen in the fit check.
+  The two corners at the tab tip stay square, because fingers 1 and 31 sit about 0.6 mm from the tab edge. DRC is still clean and all copper still 0/45/90°.
