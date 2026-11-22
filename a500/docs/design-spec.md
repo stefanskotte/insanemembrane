@@ -1,7 +1,7 @@
 # A500 Flex Membrane — Design Spec (draft, for approval)
 
 Status: approved by the user 2026-11-22 ("thats good, proceed"); built as rev A the same day (see "As built" at the end).
-Method: the same as the A1200 rev A, as built and approved. See `docs/design-spec.md`, "As built".
+Method: the same as the A1200 rev A, as built and approved. See `a1200/docs/design-spec.md`, "As built".
 
 ## 1. Goal
 A drop-in replacement for the Mitsumi **A-500(E) 56 A619B** Amiga 500 keyboard membrane, made as a 2-layer

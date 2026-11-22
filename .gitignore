@@ -5,10 +5,12 @@
 docs/watermark/
 a500/docs/watermark/
 **/watermark/
-# environments, build scratch, caches
+# environments, build scratch, caches (only the per-model build dirs - NOT tools/build, which is source)
 .venv/
-build/
+/build/
+a1200/build/
 a500/build/
+a600/build/
 __pycache__/
 *.pyc
 .DS_Store
