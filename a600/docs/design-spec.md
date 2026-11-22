@@ -99,3 +99,10 @@ Rebuild: `tools/a600/make.sh`.
   - The replica step now clears each spot's whole rim, sized from the spot's measured diameter.
   - A new cleanup stage, `tools/build/drop_loops.py`, removes any remaining small loop at a via, but only if every net stays connected exactly as before.
   - Result: 0 squares left at vias. DRC is clean and all copper is still 0/45/90°.
+- **Wiggles straightened (2026-11-23, following your hand edits to PIN22 and PIN05):**
+  - A new stage, `tools/build/straighten.py`, replaces runs of short 0/45/90 pieces with the simplest path: one straight line, or one bend.
+  - A 45° line with a small sideways step becomes one straight line. Where it ends on a pad, it runs straight on into the pad (PIN22).
+  - A twisting run into a via becomes the long 45° run, extended until it lines up with the via, then one straight run in (PIN05).
+  - Every change stays within 0.6 mm of the original and keeps ≥ 0.25 mm from other nets (0.20 minimum) and 0.3 mm from the edge and holes. The ends (pads, vias, junctions) stay put.
+  - 52 pieces merged. Both of your edits come out the same as you drew them (your edited board is kept in `a600/kicad/handrouted/`).
+  - DRC is clean and all copper is still 0/45/90°.
