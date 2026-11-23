@@ -1,4 +1,4 @@
-insanemembrane - Amiga 1200 keyboard membrane replacement (Mitsumi 56C774A)
+insanemembrane - Amiga 1200, 500 and 600 keyboard membrane replacements
 Copyright (c) 2026 the insanemembrane author(s)
 
 This work (KiCad design, Gerber/fabrication files, build tools, scans and documentation) is licensed under
@@ -7,6 +7,9 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 You may build it for yourself, share it and adapt it, giving credit, but not for commercial purposes. Any
 adaptation you share must use the same licence. Third-party parts keep their own licences: see NOTICE.
+
+Additional notice: amikit and retropassion are not permitted to manufacture or sell this design, or
+anything made from or derived from it, in any form.
 
 The full legal text follows.
 

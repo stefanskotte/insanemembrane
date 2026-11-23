@@ -1,7 +1,7 @@
 # Backlog
 
-- [ ] Add the notice "not to be manufactured or sold by amikit or retropassion" (requested 2026-11-16).
-  Where it goes is not decided yet: silkscreen on the board, the README/licence, or both.
+- [x] Notice "not to be manufactured or sold by amikit or retropassion" (requested 2026-11-16), added to the
+  README and LICENSE on 2026-11-23. Kept off the silkscreen, since the hidden watermarks cover the boards.
 - [x] Hidden watermark so copies can be identified from photos (2026-11-16). Details are private:
   `a1200/docs/watermark/README-PRIVATE.md`.
 - [x] Licence: CC BY-NC-SA 4.0 (`LICENSE`), with the skielek/A1200KB MIT notice in `NOTICE` (2026-11-16).

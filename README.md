@@ -132,3 +132,6 @@ Each script runs the whole chain from the scans through to the fab package.
 This project is licensed under [CC BY-NC-SA 4.0](LICENSE): you may build it for yourself, share it and adapt it with
 credit, but not for commercial use, and adaptations must use the same licence. The A1200 key-matrix data comes from
 [skielek/A1200KB](https://github.com/skielek/A1200KB) under the MIT licence; see [NOTICE](NOTICE).
+
+**Not to be manufactured or sold by amikit or retropassion**, in any form, including anything made from or derived
+from this design.
