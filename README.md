@@ -15,7 +15,7 @@ Each replacement is a **1:1 copy of the original**:
 | Keys | 96 + Caps Lock LED | 96 + Caps Lock LED | 78 + Caps Lock LED |
 | Connector | 31-pin tail, 1.25 mm | 31-finger tab, 1.25 mm | 30-pin tail, 1.25 mm |
 | Board size | 237.0 × 440.0 mm | 134.5 × 441.1 mm | 249.8 × 316.9 mm |
-| Status | rev A, fit check passed, ordered | rev A, fit check passed | rev A, fit check passed |
+| Status | rev A, **built, tested, fully working** | rev A, fit check passed | rev A, fit check passed |
 | Folder | [`a1200/`](a1200/) | [`a500/`](a500/) | [`a600/`](a600/) |
 
 **Planned:** the **blue A600 membrane**, the other A600 version, will follow once an original is available to scan.
@@ -29,6 +29,8 @@ Each replacement is a **1:1 copy of the original**:
 <td><img src="docs/images/a1200-3d.png" alt="A1200 membrane, 3D view"><br><br>
 <img src="docs/images/a1200-detail.png" alt="A1200 routing close-up"></td>
 </tr></table>
+
+**Tested:** a rev A board from JLCPCB has been fitted to an A1200, and every key and the Caps Lock LED work.
 
 The 31-pin tail plugs into CN13 on the A1200 motherboard. It is 10 mm shorter than the original, because the original
 has spare length and bows when plugged in. A 0.10 mm PI stiffener behind the contacts brings them to 0.21 mm total, like
