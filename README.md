@@ -135,5 +135,5 @@ This project is licensed under [CC BY-NC-SA 4.0](LICENSE): you may build it for 
 credit, but not for commercial use, and adaptations must use the same licence. The A1200 key-matrix data comes from
 [skielek/A1200KB](https://github.com/skielek/A1200KB) under the MIT licence; see [NOTICE](NOTICE).
 
-**Not to be manufactured or sold by AmigaKit or retropassion**, in any form, including anything made from or derived
+**Not to be manufactured or sold by AmigaKit or RetroPassion**, in any form, including anything made from or derived
 from this design.
